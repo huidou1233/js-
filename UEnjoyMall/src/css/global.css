@@ -1,0 +1,289 @@
+body{
+  font-family: Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,WenQuanYi Micro Hei,Microsoft Yahei,sans-serif;
+  font-size: 14px;
+  color: #1F2749;
+  line-height: 1.5;
+}
+
+body{
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+div,p,ul,li,h1,h2,h3,h4,h5,h6,form,img{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: 100%;
+  border-bottom: 2px solid #070F35;
+}
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav{
+  margin-top: 10px;
+}
+
+.header-logo{
+  width: 140px;
+  height: 40px;
+  background-image: url("../assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  text-align: center;
+}
+.block2inline{
+   display: inline-block;
+}
+
+.search{
+  position: relative;
+  width: 430px;
+  height: 30px;
+  margin-left: 150px;
+  border-radius: 4px;
+  border: 1px solid #D8D8D8;
+}
+
+.search-button{
+  width: 70px;
+  height: 30px;
+  /*border-top-right-radius:  4px;*/
+  /*border-bottom-right-radius: 4px;*/
+}
+
+.search .search-button{
+  float: right;
+}
+
+.search .search-button button{
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-search{
+  background-color: #070F35;
+  color: #fff;
+  font-size: 1em;
+  height: 30px;
+  width: 70px;
+  border-top-right-radius:  4px;
+  border-bottom-right-radius: 4px;
+}
+
+.search-panel-fields{
+  height: 40px;
+  position: absolute;
+}
+
+
+.search-input{
+  line-height: 27px;
+}
+
+.search-panel-fields input{
+  position: absolute;
+  width: 350px;
+  height: 22px;
+  margin: 3px 0;
+  outline: 0;
+  text-indent: 10px;
+  border: 0;
+  outline: 0;
+  background: #FFF;
+  font-size: 1em;
+}
+ul,ol{
+  list-style: none;
+}
+
+.nav-content{
+  float: right;
+  margin-top: 14px;
+}
+
+.nav-content li.item{
+  display: inline-block;
+}
+
+li.line{
+  width: 1px;
+  height: 11px;
+  background-color: #6A6F86;
+  margin: 0 12px;
+}
+
+.nav-content li a,.item-info h3{
+  font-size: 1em;
+  color: #070F35;
+}
+
+.nav-content li img{
+  width: 14px;
+  height: 15px;
+}
+
+.item-category{
+  text-align: center;
+  color:#1f2749;
+}
+
+.category li{
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+button{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  cursor: pointer;
+}
+
+.footer{
+  bottom: 0;
+  width: 100%;
+  background-color: #FAFBFF;
+  margin-top: 20px;
+}
+
+.footer-nav{
+  width: 610px;
+  margin: 40px  auto 20px auto;
+  text-align: center;
+}
+.footer-content{
+  margin: 32px auto 10px auto;
+  text-align: center;
+}
+
+.uenjoy-img{
+  width: 60px;
+  height: 38px;
+  margin-bottom: 10px;
+}
+.uenjoy-delivery{
+  width: 208px;
+  height: 27px;
+}
+.follow_us{
+  margin-top: 38px;
+  font-size: 1.28em;
+  color: #070F35;
+}
+
+.follow_us_img{
+  width: 32px;
+  height: 32px;
+}
+.follow-space-right{
+  margin-right: 50px;
+}
+.follow_us-content{
+  margin-top: 30px;
+}
+.footer-line{
+  border: 1px solid #1F2749;
+  margin: 19px 0;
+}
+.footer-vertical-line{
+  width: 1px;
+  height: 90px;
+  background: #FFF;
+  margin-top: 43px;
+  float: left;
+  margin-right: 90px;
+}
+.footer-tip{
+  font-size: 0.8em;
+  color: #070F35;
+}
+.subscribe{
+  padding-top: 44px;
+}
+.subscribe p{
+  margin-bottom: 10px;
+}
+.footer_server{
+  width: 100%;
+  height: 218px;
+  background-color: #3E3F46;
+}
+
+.foot-link{
+  padding-top: 20px;
+  float: left;
+}
+.foot-link  p,.subscribe-title{
+  font-size: 1.28em;
+  color: #FFF;
+  /*margin: 20px auto;*/
+}
+.about_us,.contact_us,.payment_method{
+  vertical-align: top;
+  margin-right: 90px;
+}
+.foot-link li a,.subscribe-content{
+  font-size: 1em;
+  color: #FFF;
+}
+
+.foot-link ul{
+  margin-top: 10px;
+}
+.foot-link ul li{
+  padding-top:10px;
+}
+
+.clearfix:after {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+    content: ".";
+}
+.subscribe-submit input {
+    text-indent: 10px;
+    border: none;
+    height: 44px;
+    width: 230px;
+    font-size: 1.28em;
+    outline: 0;
+}
+.footer-submit{
+  float: right;
+  height: 46px;
+}
+.footer-submit button{
+  height: 46px;
+  width: 120px;
+  font-size: 1.28em;
+  color: #FFF;
+  background-color: #FF5469;
+  cursor: pointer;
+  border: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+}
+.subscribe-submit{
+  height: 44px;
+  background-color: #FFF;
+  border-radius: 4px;
+}
+.float-left{
+  float: left;
+}

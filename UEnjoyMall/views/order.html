@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/lib/css/jquery-ui.min.css" >
+    <link rel="stylesheet" href="../src/css/profile.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="nav">
+          <div class="block2inline">
+            <a href="./index.html" class="header-logo" target="_blank"></a>
+          </div>
+
+          <div class="search block2inline">
+
+            <div class="search-panel-fields ">
+              <input type="text" class="search-input" placeholder="NEW PRODUCTS" autocomplete="off">
+            </div>
+            <div class="search-button ">
+              <button class="btn-search">Search</button></div>
+          </div>
+          <ul class="nav-content" id="idmenu">
+            <li class="item">
+              <a href="#">Sign In</a>
+              <ul>
+                <li class="menu-item">
+                  <a href="">Notification</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Orders</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Reviews</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Shipping</a>
+                </li>
+              </ul>
+            </li>
+            <li class="line item" ></li>
+            <li class="item">
+              <a href="#">MY FAVORITES</a>
+              <ul>
+                <li class="menu-item">
+                  <a href="">Notification</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Orders</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Reviews</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Shipping</a>
+                </li>
+              </ul>
+            </li>
+              <li class="line item"></li>
+            <li class="item">
+              <a href="#">CART</a>
+              <img src="../src/assets/Shopping_Card.png" alt="购物车" />
+              <ul>
+                <li class="menu-item">
+                  <a href="">Notification</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Orders</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Reviews</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Shipping</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul class="category">
+          <li class="block2inline">
+            <a href="" class="item-category">Home</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Outdoor Diniing</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Dining & Entertaining</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Kitchen</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Decor & Curtains</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Lighting Bed & Bath Organization</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div class="top-space-20 nav-top">
+        <a href="#" class="nav-category">Home</a> >
+        <a href="#" class="nav-current">address</a>
+      </div>
+      <div class="profile">
+        <div class="block2inline nav-profile">
+          <ul >
+            <li><a href="./order.html" class="default">Orders</a></li>
+            <li><a href="./my_favorites.html" class="default">My Favorites</a></li>
+            <li><a href="./reviews.html" class="default">Reviews</a></li>
+            <li><a href="./manage_address.html" class="active">Shipping Address</a></li>
+            <li><a href="./change_name.html" class="default">Profile Info</a></li>
+            <li><a href="./change_password.html" class="default">Password</a></li>
+          </ul>
+        </div>
+        <div class="profile-content block2inline">
+          <div class="profile-name">
+            <p>
+              Orders
+            </p>
+          </div>
+            <div id="tabs" class="order-content" style="border: none">
+              <ul >
+                <li><a href="#process">In Process</a></li>
+                <li><a href="#delivered">Delivered</a></li>
+              </ul>
+              <div id="process" class="order-content" style="padding: 0em;">
+                <table class="order-table">
+                  <tbody>
+                    <tr>
+                      <th class="order-info-width">ORDER INFO</th>
+                      <th class="freight-width">FREIGH</th>
+                      <th class="subtotal-width">SUBTOTAL</th>
+                      <th class="condition-width">CONDITION</th>
+                      <th class="operation-width">OPERATION</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="order-items">
+                  <li class="order-item">
+                    <div class="order-head clarfix">
+                        <p class="float-left order-code">
+                          Order Code：120000322473
+                        </p>
+                        <p class="float-right order-date">2016-12-12 12:34:32</p>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th class="order-info-width clearfix">
+                            <a href="#">
+                              <img src="../src/assets/product_img.png" class="order-img float-left">
+                              <p class="product-name multi-break">
+                                This is the name of Product,This is the name of product
+                                  This is the name of Product,This is the name of product
+                                    This is the name of Product,This is the name of product
+                              </p>
+                              <!-- <span class=></span> -->
+                              <p class="price">$234.0</p>
+                            </a>
+
+
+                          </th>
+                          <th class="freight-width">
+                            <p class="gray top-space-20">Shipping</p>
+                            <p class="freight-price top-space-10">$1200</p>
+                          </th>
+                          <th class="subtotal-width">
+                            <p class="gray top-space-20">Order Total</p>
+                            <p class="light-black top-space-10">$124.00</p>
+                          </th>
+                          <th class="condition-width">
+                            <p class="red top-space-20">Waite Pay</p>
+                          </th>
+                          <th class="operation-width">
+                            <a href="" >
+                              <p class="deep-blue top-space-20">Order Deatils</p>
+                            </a>
+                            <a href="" >
+                              <p class="deep-blue top-space-10">Shipping Info</p>
+                            </a>
+                            <button class="btn red top-space-10">Pay Now</button>
+                          </th>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                  <li class="order-item">
+                    <div class="order-head clarfix">
+                        <p class="float-left order-code">
+                          Order Code：120000322473
+                        </p>
+                        <p class="float-right order-date">2016-12-12 12:34:32</p>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th class="order-info-width clearfix">
+                            <a href="#">
+                              <img src="../src/assets/product_img.png" class="order-img float-left">
+                              <p class="product-name multi-break">
+                                This is the name of Product,This is the name of product
+                                  This is the name of Product,This is the name of product
+                                    This is the name of Product,This is the name of product
+                              </p>
+                              <!-- <span class=></span> -->
+                              <p class="price">$234.0</p>
+                            </a>
+
+
+                          </th>
+                          <th class="freight-width">
+                            <p class="gray top-space-20">Shipping</p>
+                            <p class="freight-price top-space-10">$1200</p>
+                          </th>
+                          <th class="subtotal-width">
+                            <p class="gray top-space-20">Order Total</p>
+                            <p class="light-black top-space-10">$124.00</p>
+                          </th>
+                          <th class="condition-width">
+                            <p class="red top-space-20">Waite Pay</p>
+                          </th>
+                          <th class="operation-width">
+                            <a href="" >
+                              <p class="deep-blue top-space-20">Order Deatils</p>
+                            </a>
+                            <a href="" >
+                              <p class="deep-blue top-space-10">Shipping Info</p>
+                            </a>
+                            <button class="btn red top-space-10">Pay Now</button>
+                          </th>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                  <li class="order-item">
+                    <div class="order-head clarfix">
+                        <p class="float-left order-code">
+                          Order Code：120000322473
+                        </p>
+                        <p class="float-right order-date">2016-12-12 12:34:32</p>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th class="order-info-width clearfix">
+                            <a href="#">
+                              <img src="../src/assets/product_img.png" class="order-img float-left">
+                              <p class="product-name multi-break">
+                                This is the name of Product,This is the name of product
+                                  This is the name of Product,This is the name of product
+                                    This is the name of Product,This is the name of product
+                              </p>
+                              <!-- <span class=></span> -->
+                              <p class="price">$234.0</p>
+                            </a>
+
+
+                          </th>
+                          <th class="freight-width">
+                            <p class="gray top-space-20">Shipping</p>
+                            <p class="freight-price top-space-10">$1200</p>
+                          </th>
+                          <th class="subtotal-width">
+                            <p class="gray top-space-20">Order Total</p>
+                            <p class="light-black top-space-10">$124.00</p>
+                          </th>
+                          <th class="condition-width">
+                            <p class="red top-space-20">Waite Pay</p>
+                          </th>
+                          <th class="operation-width">
+                            <a href="" >
+                              <p class="deep-blue top-space-20">Order Deatils</p>
+                            </a>
+                            <a href="" >
+                              <p class="deep-blue top-space-10">Shipping Info</p>
+                            </a>
+                            <button class="btn red top-space-10">Pay Now</button>
+                          </th>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+              <div id="delivered" class="order-content" style="padding: 0em;">
+                <table class="order-table">
+                  <tbody>
+                    <tr>
+                      <th class="order-info-width">ORDER INFO</th>
+                      <th class="freight-width">FREIGH</th>
+                      <th class="subtotal-width">SUBTOTAL</th>
+                      <th class="condition-width">CONDITION</th>
+                      <th class="operation-width">OPERATION</th>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="order-items">
+                  <li class="order-item">
+                    <div class="order-head clarfix">
+                        <p class="float-left order-code">
+                          Order Code：120000322473
+                        </p>
+                        <p class="float-right order-date">2016-12-12 12:34:32</p>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th class="order-info-width clearfix">
+                            <a href="#">
+                              <img src="../src/assets/product_img.png" class="order-img float-left">
+                              <p class="product-name multi-break">
+                                This is the name of Product,This is the name of product
+                                  This is the name of Product,This is the name of product
+                                    This is the name of Product,This is the name of product
+                              </p>
+                              <!-- <span class=></span> -->
+                              <p class="price">$234.0</p>
+                            </a>
+
+
+                          </th>
+                          <th class="freight-width">
+                            <p class="gray top-space-20">Shipping</p>
+                            <p class="freight-price top-space-10">$1200</p>
+                          </th>
+                          <th class="subtotal-width">
+                            <p class="gray top-space-20">Order Total</p>
+                            <p class="light-black top-space-10">$124.00</p>
+                          </th>
+                          <th class="condition-width">
+                            <p class="red top-space-20">Waite Pay</p>
+                          </th>
+                          <th class="operation-width">
+                            <a href="" >
+                              <p class="deep-blue top-space-20">Order Deatils</p>
+                            </a>
+                            <a href="" >
+                              <p class="deep-blue top-space-10">Shipping Info</p>
+                            </a>
+                            <button class="btn red top-space-10">Pay Now</button>
+                          </th>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                  <li class="order-item">
+                    <div class="order-head clarfix">
+                        <p class="float-left order-code">
+                          Order Code：120000322473
+                        </p>
+                        <p class="float-right order-date">2016-12-12 12:34:32</p>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th class="order-info-width clearfix">
+                            <a href="#">
+                              <img src="../src/assets/product_img.png" class="order-img float-left">
+                              <p class="product-name multi-break">
+                                This is the name of Product,This is the name of product
+                                  This is the name of Product,This is the name of product
+                                    This is the name of Product,This is the name of product
+                              </p>
+                              <!-- <span class=></span> -->
+                              <p class="price">$234.0</p>
+                            </a>
+
+
+                          </th>
+                          <th class="freight-width">
+                            <p class="gray top-space-20">Shipping</p>
+                            <p class="freight-price top-space-10">$1200</p>
+                          </th>
+                          <th class="subtotal-width">
+                            <p class="gray top-space-20">Order Total</p>
+                            <p class="light-black top-space-10">$124.00</p>
+                          </th>
+                          <th class="condition-width">
+                            <p class="red top-space-20">Finish</p>
+                          </th>
+                          <th class="operation-width">
+                            <a href="" >
+                              <p class="deep-blue top-space-20">Order Deatils</p>
+                            </a>
+                            <a href="" >
+                              <p class="deep-blue top-space-10">Shipping Info</p>
+                            </a>
+                            <button class="btn red top-space-10">Pay Now</button>
+                          </th>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                  <li class="order-item">
+                    <div class="order-head clarfix">
+                        <p class="float-left order-code">
+                          Order Code：120000322473
+                        </p>
+                        <p class="float-right order-date">2016-12-12 12:34:32</p>
+                    </div>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <th class="order-info-width clearfix">
+                            <a href="#">
+                              <img src="../src/assets/product_img.png" class="order-img float-left">
+                              <p class="product-name multi-break">
+                                This is the name of Product,This is the name of product
+                                  This is the name of Product,This is the name of product
+                                    This is the name of Product,This is the name of product
+                              </p>
+                              <!-- <span class=></span> -->
+                              <p class="price">$234.0</p>
+                            </a>
+
+
+                          </th>
+                          <th class="freight-width">
+                            <p class="gray top-space-20">Shipping</p>
+                            <p class="freight-price top-space-10">$1200</p>
+                          </th>
+                          <th class="subtotal-width">
+                            <p class="gray top-space-20">Order Total</p>
+                            <p class="light-black top-space-10">$124.00</p>
+                          </th>
+                          <th class="condition-width">
+                            <p class="red top-space-20">Finish</p>
+                          </th>
+                          <th class="operation-width">
+                            <a href="" >
+                              <p class="deep-blue top-space-20">Order Deatils</p>
+                            </a>
+                            <a href="" >
+                              <p class="deep-blue top-space-10">Shipping Info</p>
+                            </a>
+                            <button class="btn red top-space-10">Pay Now</button>
+                          </th>
+
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="footer">
+      <div class="footer_server">
+        <div class="container">
+          <div class="foot-link ">
+            <div class="about_us block2inline">
+              <p>About Us</p>
+              <ul>
+                <li><a href="">Our Company</a></li>
+                <li><a href="">Press Center </a></li>
+                <li><a href="">Uenjoy Influencers</a></li>
+              </ul>
+            </div>
+
+            <div class="contact_us block2inline">
+              <p>Contact Us</p>
+              <ul>
+                <li><a href="">+1(800)399 4822 (US)</a></li>
+                <li><a href="">+1(800)399 4822 (US)</a></li>
+              </ul>
+              <ul>
+                <li><a href="">Email</a></li>
+                <li><a href="">Service@Uenjoy.com</a></li>
+              </ul>
+            </div>
+            <div class="payment_method block2inline">
+              <p>Payment Methods</p>
+              <ul>
+                <li><a href="">PayPal</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-vertical-line"></div>
+          <div class="subscribe clearfix">
+            <p class="subscribe-title">Subscribe</p>
+            <p class="subscribe-content">
+              Be the first to know about out lastest product.
+            </p>
+            <div class="subscribe-submit block2inline">
+
+              <div class="clearfix block2inline">
+                <input type="text" class="search-input" placeholder="NEW PRODUCTS" autocomplete="off">
+              </div>
+              <div class="footer-submit">
+                <button >Search</button></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-nav ">
+          <div >
+            <img src="../src/assets/uenjoy.png" alt="U Enjoy" class="uenjoy-img">
+          </div>
+          <div >
+            <img src="../src/assets/UEnjoy_Delivery.png" alt="U Enjoy We Delivery" />
+            <p class="follow_us">FOLLOW US</p>
+          <div class="follow_us-content">
+            <img src="../src/assets/Facebook.png" alt="Facebook" class="follow_us_img follow-space-right">
+            <img src="../src/assets/tw.png" alt="Twitter" class="follow_us_img follow-space-right">
+            <img src="../src/assets/LinkedIn.png" alt="LinkedIn" class="follow_us_img follow-space-right">
+            <img src="../src/assets/YouTube.png" alt="YouTube" class="follow_us_img follow-space-right">
+            <img src="../src/assets/ins.png" alt="instagram" class="follow_us_img">
+          </div>
+          <div class="footer-line"></div>
+          <p class="footer-tip">PatPat is a registered trademark of InterFocus Inc. All Rights Reserved.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <script type="text/javascript" src="../src/lib/js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="../src/lib/js/jquery.mnmenu.js"></script>
+    <script type="text/javascript" src="../src/lib/js/jquery-ui.min.js">
+
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+              $('#idmenu').mnmenu();
+              $("#tabs").tabs({
+                event: "mouseover"
+              });
+          });
+    </script>
+  </body>
+</html>

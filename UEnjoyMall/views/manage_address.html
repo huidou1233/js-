@@ -335,6 +335,7 @@
                    $('#wrap').show();
                 },
                 open: function(event, ui) {
+                  $(".ui-dialog-titlebar", $(this).parent()).hide();
                   $(".ui-widget-overlay").css({"background-color":"#222","opacity":"0.8"});
                   $('.ui-widget-overlay').bind('click', function(){           $("#dialog-form").dialog('close'); });
                 }

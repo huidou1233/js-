@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../src/css/global.css">
+    <link rel="stylesheet" href="../src/css/cart.css">
+    <link rel="stylesheet" href="../src/lib/css/jquery-ui.min.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="nav">
+          <div class="block2inline">
+            <a href="./index.html" class="header-logo" target="_blank"></a>
+          </div>
+
+          <div class="search block2inline">
+
+            <div class="search-panel-fields ">
+              <input type="text" class="search-input" placeholder="NEW PRODUCTS" autocomplete="off">
+            </div>
+            <div class="search-button ">
+              <button class="btn-search">Search</button></div>
+          </div>
+          <ul class="nav-content" id="idmenu">
+            <li class="item">
+              <a href="#">Sign In</a>
+              <ul>
+                <li class="menu-item">
+                  <a href="">Notification</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Orders</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Reviews</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Shipping</a>
+                </li>
+              </ul>
+            </li>
+            <li class="line item" ></li>
+            <li class="item">
+              <a href="#">MY FAVORITES</a>
+              <ul>
+                <li class="menu-item">
+                  <a href="">Notification</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Orders</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Reviews</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Shipping</a>
+                </li>
+              </ul>
+            </li>
+              <li class="line item"></li>
+            <li class="item">
+              <a href="#">CART</a>
+              <img src="../src/assets/Shopping_Card.png" alt="购物车" />
+              <ul>
+                <li class="menu-item">
+                  <a href="">Notification</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Orders</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#">Reviews</a>
+                </li>
+                <li class="menu-item">
+                  <a href="">Shipping</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul class="category">
+          <li class="block2inline">
+            <a href="" class="item-category">Home</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Outdoor Diniing</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Dining & Entertaining</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Kitchen</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Decor & Curtains</a></li>
+          <li class="block2inline">
+            <a href="" class="item-category">Lighting Bed & Bath Organization</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="container profile-space-bottom">
+      <div class="top-space-20 nav-top">
+        <a href="#" class="nav-category">Home</a> >
+        <a href="#" class="nav-current">Shipping Cart</a> >
+        <a href="#" class="nav-current">Choose Address</a>
+      </div>
+      <div class="address-container">
+        <div class="top-space-20">
+          <p class="default-title">Ship to</p>
+          <div class="top-space-10 bg clearfix">
+            <div class="float-left left-space-20 top-space-20">
+              <div class="default-address">
+                <input type="radio" id="default-addresse" name="address" checked >
+                <label for="default-addresse" >My Shipping Address</label>
+                <div class="address-desc bottom-space-20">
+                  <p class="consignee-name">John Jams</p>
+                  <p class="consignee-phone">9808-345604332</p>
+                  <p class="address multi-break">22nd Floor New Youk Australian 22nd Floor New Youk Australian 22nd Floor New Youk Australian 22nd Floor New Youk Australian 22nd Floor New Youk Australian 22nd Floor New Youk Australian</p>
+                </div>
+              </div>
+              <div class="new-address top-space-10  bottom-space-20">
+                <input type="radio" id="new-address" name="address" >
+                <label for="new-address" >New Address</label>
+
+              </div>
+            </div>
+            <div class="float-right right-space-20 top-space-20">
+              <button id="address-list" class="btn address-list-btn">Address List</button>
+            </div>
+          </div>
+        </div>
+        <div class="top-space-20">
+          <p class="default-title">Pay With</p>
+          <div class="bg top-space-10">
+            <div class="paypal">
+              <input type="radio"  checked name="paypal" >
+              <label class="left-space-10">
+                <img src="../src/assets/paypal.png"  />
+                <span class="left-space-20 default-tip2">Please enter your detailed payment information after you submit your order.</span>
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="top-space-20">
+          <p class="default-title">Order Items</p>
+          <div class="bg top-space-10">
+            <ul class="bg">
+                <li class="order-item left-space-20 right-space-20 clearfix">
+                  <img src="../src/assets/product_img.png" class="order-img float-left">
+                  <div class="float-left product-message">
+                    <p class="default-content multi-break">This is the name of product,This is the name of productThThis is the name of product,This is the name of productTh</p>
+                    <p class="top-space-10 default-content">Qty: <span> 1</span></p>
+                    <p class="top-space-10 red-font2">$120.00</p>
+                  </div>
+                </li>
+                <li class="order-item left-space-20 right-space-20 clearfix">
+                  <img src="../src/assets/product_img.png" class="order-img float-left">
+                  <div class="float-left product-message">
+                    <p class="default-content multi-break">This is the name of product,This is the name of productThThis is the name of product,This is the name of productTh</p>
+                    <p class="top-space-10 default-content">Qty: <span> 1</span></p>
+                    <p class="top-space-10 red-font2">$120.00</p>
+                  </div>
+                </li>
+                <li class="order-item left-space-20 right-space-20 clearfix">
+                  <img src="../src/assets/product_img.png" class="order-img float-left">
+                  <div class="float-left product-message">
+                    <p class="default-content multi-break">This is the name of product,This is the name of productThThis is the name of product,This is the name of productTh</p>
+                    <p class="top-space-10 default-content">Qty: <span> 1</span></p>
+                    <p class="top-space-10 red-font2">$120.00</p>
+                  </div>
+                </li>
+            </ul>
+
+          </div>
+
+        </div>
+        <div class="top-space-20">
+          <p class="default-title">Order Summary</p>
+          <div class="bg top-space-10">
+            <div class="order-sumary ">
+              <div class="clearfix">
+                <div class="float-left">
+                  <p class="default-content">Product Qty</p>
+                </div>
+                <div class="float-right">
+                  <p class="default-content">4</p>
+                </div>
+              </div>
+              <div class="clearfix top-space-20">
+                <div class="float-left">
+                  <p class="default-content">Subtotal</p>
+                </div>
+                <div class="float-right">
+                  <p class="default-content">$120.00</p>
+                </div>
+              </div>
+              <div class="clearfix top-space-20">
+                <div class="float-left">
+                  <p class="default-content">Shipping</p>
+                </div>
+                <div class="float-right">
+                  <p class="default-content">$120.00</p>
+                </div>
+              </div>
+              <div class="dashed"></div>
+              <div class="clearfix top-space-20">
+                <div class="float-left">
+                  <p class="default-title">Order Total</p>
+                </div>
+                <div class="float-right">
+                  <p class="default-title">$120.00</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="clearfix solid">
+          <div class="float-right top-space-20">
+            <div class="float-left">
+              <p>
+                <span class="default-content">Order Total: </span>
+                <span class="red-font"> $132.00</span>
+                <p class="default-tip">You're saving $21.00</p>
+              </p>
+            </div>
+            <div class="left-space-10 float-left">
+              <button class="check-btn">Submit Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="choose-address">
+      <div class="choose-address-container">
+        <p class="dialog-title">Choose Receiving address</p>
+        <ul class="address-list clearfix">
+          <li>
+            <div class="float-left top-space-20">
+              <input type="radio" checked name="address" >
+            </div>
+            <div class="float-left top-space-20 left-space-20 address-item ">
+              <div class="address-inner clearfix">
+                <div class="float-left address-left">
+                  <p class="default-title">ASA As</p>
+                  <p class="default-title">293-34455-234</p>
+                </div>
+                  <div class="float-right address-right">
+                    <p class="multi-break default-title">New York, Australian Capital Territory, 10005 New York, Australian Capital Territory, 10005 New York, Australian Capital Territory, 10005
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+          </li>
+          <li>
+            <div class="float-left top-space-20">
+              <input type="radio"  name="address" >
+            </div>
+            <div class="float-left top-space-20 left-space-20 address-item ">
+              <div class="address-inner clearfix">
+                <div class="float-left address-left">
+                  <p class="default-title">ASA As</p>
+                  <p class="default-title">293-34455-234</p>
+                </div>
+                  <div class="float-right address-right">
+                    <p class="multi-break default-title">New York, Australian Capital Territory, 10005
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer">
+      <div class="footer_server">
+        <div class="container">
+          <div class="foot-link ">
+            <div class="about_us block2inline">
+              <p>About Us</p>
+              <ul>
+                <li><a href="">Our Company</a></li>
+                <li><a href="">Press Center </a></li>
+                <li><a href="">Uenjoy Influencers</a></li>
+              </ul>
+            </div>
+
+            <div class="contact_us block2inline">
+              <p>Contact Us</p>
+              <ul>
+                <li><a href="">+1(800)399 4822 (US)</a></li>
+                <li><a href="">+1(800)399 4822 (US)</a></li>
+              </ul>
+              <ul>
+                <li><a href="">Email</a></li>
+                <li><a href="">Service@Uenjoy.com</a></li>
+              </ul>
+            </div>
+            <div class="payment_method block2inline">
+              <p>Payment Methods</p>
+              <ul>
+                <li><a href="">PayPal</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-vertical-line"></div>
+          <div class="subscribe clearfix">
+            <p class="subscribe-title">Subscribe</p>
+            <p class="subscribe-content">
+              Be the first to know about out lastest product.
+            </p>
+            <div class="subscribe-submit block2inline">
+
+              <div class="clearfix block2inline">
+                <input type="text" class="search-input" placeholder="NEW PRODUCTS" autocomplete="off">
+              </div>
+              <div class="footer-submit">
+                <button >Search</button></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-nav ">
+          <div >
+            <img src="../src/assets/uenjoy.png" alt="U Enjoy" class="uenjoy-img">
+          </div>
+          <div >
+            <img src="../src/assets/UEnjoy_Delivery.png" alt="U Enjoy We Delivery" />
+            <p class="follow_us">FOLLOW US</p>
+          <div class="follow_us-content">
+            <img src="../src/assets/Facebook.png" alt="Facebook" class="follow_us_img follow-space-right">
+            <img src="../src/assets/tw.png" alt="Twitter" class="follow_us_img follow-space-right">
+            <img src="../src/assets/LinkedIn.png" alt="LinkedIn" class="follow_us_img follow-space-right">
+            <img src="../src/assets/YouTube.png" alt="YouTube" class="follow_us_img follow-space-right">
+            <img src="../src/assets/ins.png" alt="instagram" class="follow_us_img">
+          </div>
+          <div class="footer-line"></div>
+          <p class="footer-tip">PatPat is a registered trademark of InterFocus Inc. All Rights Reserved.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <script type="text/javascript" src="../src/lib/js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="../src/lib/js/jquery.mnmenu.js"></script>
+    <script type="text/javascript" src="../src/lib/js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+          $('#idmenu').mnmenu();
+          $("#address-list").click(function () {
+            $("#choose-address").dialog("open");
+          });
+          $("#choose-address").dialog({
+            autoOpen: false,
+            width: 860,
+            modal: true,
+            closeOnEscape:false,
+            close: function(event, ui) {
+               $('#wrap').show();
+            },
+            open: function(event, ui) {
+              $(".ui-dialog-titlebar", $(this).parent()).hide();
+              $(".ui-widget-overlay").css({"background-color":"#222","opacity":"0.8"});
+              $('.ui-widget-overlay').bind('click', function(){           $("#choose-address").dialog('close'); });
+            }
+
+          });
+      });
+    </script>
+  </body>
+</html>

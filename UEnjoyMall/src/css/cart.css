@@ -114,3 +114,106 @@ input:-moz-read-write{
 .fitst-item-name{
   padding-left: 47px;
 }
+.address-container{
+  width: 780px;
+  margin: 0 auto;
+}
+.bg{
+  width: 780px;
+  background-color: #FAFBFF;
+}
+.address-list-btn{
+  color: #1CA4FF;
+  font-size: 0.86em;
+  background: none;
+}
+.address-desc {
+  margin-left: 30px;
+}
+.address-desc p{
+  width: 600px;
+  margin-top: 5px;
+  color: #1F2749;
+  font-size: 1.29em;
+}
+.paypal{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+.paypal label img{
+  width: 75px;
+  height: 20px;
+  vertical-align: middle;
+}
+li.order-item{
+  border-bottom: 1px dashed #D8D8D8;
+}
+li.order-item:last-child{
+  border-bottom: none;
+}
+.order-img{
+  margin: 15px 0 10px 0;
+  width: 100px;
+  height: 100px;
+}
+.product-message{
+  position: relative;
+  width: 600px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.order-sumary{
+  padding: 20px;
+}
+.dashed{
+  width: 100%;
+  margin: 20px auto;
+  border-top: 1px dashed #D8D8D8;
+}
+.solid{
+  width: 100%;
+  margin: 20px auto;
+  border-top: 1px solid #D8D8D8;
+}
+.choose-address-container{
+  margin: 40px 63px 98px 63px;
+}
+.dialog-title{
+  font-size: 1.72em;
+  color: #6A6F86;
+  text-align: center;
+}
+.address-list{
+  margin: 20px auto 0 auto;
+}
+.address-list input[type='radio']:checked{
+  background-color: #1F2749;
+}
+.address-list input[type='radio']{
+  margin-top: 45px;
+  cursor: pointer;
+}
+.checked{
+  border: 1px solid #1F2749;
+}
+.address-item{
+  width: 660px;
+  border: 1px solid #D8D8D8;
+}
+.address-inner{
+  margin: 20px 10px;
+}
+.address-left{
+  width: 150px;
+}
+.address-right{
+  width: 480px;
+}
+.address-detail{
+  width: 1.29em;
+  color: #1F2749;
+}
+.address-list li{
+  margin-top: 20px;
+}

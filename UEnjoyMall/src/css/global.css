@@ -392,6 +392,12 @@ ul.mnmenu li.level-0 li span.arrow.hover {
 .right-space-20{
   margin-right: 20px;
 }
+.right-space-15{
+  margin-right: 15px;
+}
+.bottom-space-20{
+  margin-bottom: 20px;
+}
 input{
   border: 1px solid #D8D8D8;
   outline: none;
